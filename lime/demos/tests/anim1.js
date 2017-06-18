@@ -39,18 +39,18 @@ test.start = function() {
 	menuscene.appendChild(layer);
 
 
-	var sprite = new lime.Sprite().setFill(100,0,0).setSize(70, 70).setRenderer(lime.Renderer.CANVAS);
+	var sprite = new lime.Sprite().setFill(randomc1,randomc2,randomc3).setSize(50, 50).setRenderer(lime.Renderer.CANVAS);
 	layer.appendChild(sprite);
 
 	var anim = new lime.animation.Sequence(new lime.animation.Spawn(
 	        new lime.animation.MoveBy(200, 0).setDuration(1.5),
 	        new lime.animation.ScaleBy(2),
-            new lime.animation.ColorTo(0,200,0)
+            new lime.animation.ColorTo(randomc1,randomc2,randomc3)
             
 	    ),    new lime.animation.Spawn(
         	        new lime.animation.MoveBy(-200, 0).setDuration(1.5),
         	        new lime.animation.ScaleBy(.5),
-                    new lime.animation.ColorTo(0,200,0)
+                    new lime.animation.ColorTo(randomc1,randomc2,randomc3)
 
         	    ));
 	sprite.runAction(new lime.animation.Loop(anim).setLimit(5));
