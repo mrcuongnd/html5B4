@@ -48,7 +48,7 @@ test.start = function() {
 	    ),    new lime.animation.Spawn(
         	        new lime.animation.MoveBy(-200, 0).setDuration(1.5),
         	        new lime.animation.ScaleBy(.5),
-                    new lime.animation.ColorTo(200,0,0)
+                    new lime.animation.ColorTo(Math.floor(Math.random() * 255) + 1,Math.floor(Math.random() * 255) + 1,Math.floor(Math.random() * 255) + 1)
 
         	    ));
 	sprite.runAction(new lime.animation.Loop(anim).setLimit(5));
