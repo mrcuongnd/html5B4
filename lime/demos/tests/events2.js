@@ -32,8 +32,8 @@ test.start = function() {
 	var dbg = document.getElementById('dbg');
 
 
-	for (var r = 0; r < 5; r++) {
-	    for (var c = 0; c < 5; c++) {
+	for (var r = 0; r < 3; r++) {
+	    for (var c = 0; c < 3; c++) {
 
 	        var box = (new lime.Sprite)
 	            .setSize(80, 80)
