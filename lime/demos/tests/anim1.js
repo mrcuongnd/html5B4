@@ -25,7 +25,9 @@ test.HEIGHT = 400;
 
 
 test.start = function() {
-
+	var randomc1 = Math.floor(Math.random() * 255) + 1;
+	var randomc2 = Math.floor(Math.random() * 255) + 1;
+	var randomc3 = Math.floor(Math.random() * 255) + 1;
 	//director
 	test.director = new lime.Director(document.body, test.WIDTH, test.HEIGHT);
 	test.director.makeMobileWebAppCapable();
@@ -37,7 +39,7 @@ test.start = function() {
 	menuscene.appendChild(layer);
 
 
-	var sprite = new lime.Sprite().setFill(100,0,0).setSize(50, 50).setRenderer(lime.Renderer.CANVAS);
+	var sprite = new lime.Sprite().setFill(100,0,0).setSize(70, 70).setRenderer(lime.Renderer.CANVAS);
 	layer.appendChild(sprite);
 
 	var anim = new lime.animation.Sequence(new lime.animation.Spawn(
