@@ -61,7 +61,7 @@ test.start = function() {
 
 test.makeMonster = function(){
     var sprite = new lime.Sprite().setPosition(200,200)
-        .setFill(test.ss.getFrame('walking-s0001.png'));
+        .setFill(test.ss.getFrame('01.png'));
 	//layer.appendChild(sprite);
 	
 	// show if monster is selected
@@ -116,7 +116,7 @@ test.moveToPosition = function(monster,pos){
     // on stop show front facing
     goog.events.listen(move,lime.animation.Event.STOP,function(){
         anim.stop();
-        monster.setFill(test.ss.getFrame('walking-s0001.png'));
+        monster.setFill(test.ss.getFrame('01.png'));
     })
     
 }
