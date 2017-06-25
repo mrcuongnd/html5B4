@@ -28,16 +28,6 @@ void Monster::removeSpriteFramesFromCache()
 // ---------------------
 // sprite name constants
 // ---------------------
-const std::string Monster::01 = "01.png";
-const std::string Monster::02 = "02.png";
-const std::string Monster::03 = "03.png";
-const std::string Monster::04 = "04.png";
-const std::string Monster::05 = "05.png";
-const std::string Monster::06 = "06.png";
-const std::string Monster::07 = "07.png";
-const std::string Monster::08 = "08.png";
-const std::string Monster::09 = "09.png";
-const std::string Monster::10 = "10.png";
 const std::string Monster::11 = "11.png";
 const std::string Monster::12 = "12.png";
 const std::string Monster::13 = "13.png";
@@ -45,9 +35,6 @@ const std::string Monster::14 = "14.png";
 const std::string Monster::15 = "15.png";
 const std::string Monster::16 = "16.png";
 const std::string Monster::17 = "17.png";
-const std::string Monster::18 = "18.png";
-const std::string Monster::19 = "19.png";
-const std::string Monster::20 = "20.png";
 const std::string Monster::21 = "21.png";
 const std::string Monster::22 = "22.png";
 const std::string Monster::23 = "23.png";
@@ -55,61 +42,24 @@ const std::string Monster::24 = "24.png";
 const std::string Monster::25 = "25.png";
 const std::string Monster::26 = "26.png";
 const std::string Monster::27 = "27.png";
-const std::string Monster::28 = "28.png";
+const std::string Monster::31 = "31.png";
+const std::string Monster::32 = "32.png";
+const std::string Monster::33 = "33.png";
+const std::string Monster::34 = "34.png";
+const std::string Monster::35 = "35.png";
+const std::string Monster::36 = "36.png";
+const std::string Monster::37 = "37.png";
+const std::string Monster::41 = "41.png";
+const std::string Monster::42 = "42.png";
+const std::string Monster::43 = "43.png";
+const std::string Monster::44 = "44.png";
+const std::string Monster::45 = "45.png";
+const std::string Monster::46 = "46.png";
+const std::string Monster::47 = "47.png";
 
 // ---------------------------------------------------------
 // convenience functions returing pointers to Sprite objects
 // ---------------------------------------------------------
-Sprite* Monster::create01Sprite()
-{
-    return Sprite::createWithSpriteFrameName(01);
-}
-
-Sprite* Monster::create02Sprite()
-{
-    return Sprite::createWithSpriteFrameName(02);
-}
-
-Sprite* Monster::create03Sprite()
-{
-    return Sprite::createWithSpriteFrameName(03);
-}
-
-Sprite* Monster::create04Sprite()
-{
-    return Sprite::createWithSpriteFrameName(04);
-}
-
-Sprite* Monster::create05Sprite()
-{
-    return Sprite::createWithSpriteFrameName(05);
-}
-
-Sprite* Monster::create06Sprite()
-{
-    return Sprite::createWithSpriteFrameName(06);
-}
-
-Sprite* Monster::create07Sprite()
-{
-    return Sprite::createWithSpriteFrameName(07);
-}
-
-Sprite* Monster::create08Sprite()
-{
-    return Sprite::createWithSpriteFrameName(08);
-}
-
-Sprite* Monster::create09Sprite()
-{
-    return Sprite::createWithSpriteFrameName(09);
-}
-
-Sprite* Monster::create10Sprite()
-{
-    return Sprite::createWithSpriteFrameName(10);
-}
-
 Sprite* Monster::create11Sprite()
 {
     return Sprite::createWithSpriteFrameName(11);
@@ -143,21 +93,6 @@ Sprite* Monster::create16Sprite()
 Sprite* Monster::create17Sprite()
 {
     return Sprite::createWithSpriteFrameName(17);
-}
-
-Sprite* Monster::create18Sprite()
-{
-    return Sprite::createWithSpriteFrameName(18);
-}
-
-Sprite* Monster::create19Sprite()
-{
-    return Sprite::createWithSpriteFrameName(19);
-}
-
-Sprite* Monster::create20Sprite()
-{
-    return Sprite::createWithSpriteFrameName(20);
 }
 
 Sprite* Monster::create21Sprite()
@@ -195,9 +130,74 @@ Sprite* Monster::create27Sprite()
     return Sprite::createWithSpriteFrameName(27);
 }
 
-Sprite* Monster::create28Sprite()
+Sprite* Monster::create31Sprite()
 {
-    return Sprite::createWithSpriteFrameName(28);
+    return Sprite::createWithSpriteFrameName(31);
+}
+
+Sprite* Monster::create32Sprite()
+{
+    return Sprite::createWithSpriteFrameName(32);
+}
+
+Sprite* Monster::create33Sprite()
+{
+    return Sprite::createWithSpriteFrameName(33);
+}
+
+Sprite* Monster::create34Sprite()
+{
+    return Sprite::createWithSpriteFrameName(34);
+}
+
+Sprite* Monster::create35Sprite()
+{
+    return Sprite::createWithSpriteFrameName(35);
+}
+
+Sprite* Monster::create36Sprite()
+{
+    return Sprite::createWithSpriteFrameName(36);
+}
+
+Sprite* Monster::create37Sprite()
+{
+    return Sprite::createWithSpriteFrameName(37);
+}
+
+Sprite* Monster::create41Sprite()
+{
+    return Sprite::createWithSpriteFrameName(41);
+}
+
+Sprite* Monster::create42Sprite()
+{
+    return Sprite::createWithSpriteFrameName(42);
+}
+
+Sprite* Monster::create43Sprite()
+{
+    return Sprite::createWithSpriteFrameName(43);
+}
+
+Sprite* Monster::create44Sprite()
+{
+    return Sprite::createWithSpriteFrameName(44);
+}
+
+Sprite* Monster::create45Sprite()
+{
+    return Sprite::createWithSpriteFrameName(45);
+}
+
+Sprite* Monster::create46Sprite()
+{
+    return Sprite::createWithSpriteFrameName(46);
+}
+
+Sprite* Monster::create47Sprite()
+{
+    return Sprite::createWithSpriteFrameName(47);
 }
 
 
