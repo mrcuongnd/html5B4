@@ -11,6 +11,7 @@ goog.require('lime.animation.KeyframeAnimation');
 goog.require('lime.animation.MoveBy');
 goog.require('lime.SpriteSheet');
 goog.require('lime.ASSETS.monster.plist')
+goog.require('lime.parser.JSON')
 
 
 test.WIDTH = 600;
@@ -33,7 +34,7 @@ test.start = function () {
     })
 
     // load the spritesheet
-    test.ss = new lime.SpriteSheet('assets/monster.png', lime.ASSETS.monster.plist);
+    test.ss = new lime.SpriteSheet('assets/monster.png', lime.ASSETS.monster.plist, lime.parser.JSON);
 
 
     var sprite = test.makeMonster().setPosition(100, 100);
@@ -59,13 +60,13 @@ test.start = function () {
     test.director.replaceScene(gamescene);
 };
 
-test.makeMonster = function () {
+test.makeMonster = function() {
     var sprite = new lime.Sprite().setPosition(200, 200)
-        .setFill(test.ss.getFrame('walking-s000 (1).png'));
+        .setFill(test.ss.getFrame('walking-s00 (1).png'));
     //layer.appendChild(sprite);
 
     // show if monster is selected
-    var light = new lime.Circle().setSize(6, 6).setFill('#f90').setPosition(0, -40).setHidden(true);
+    var light = new lime.Circle().setSize(6, 6).setFill(40, 40, 40).setPosition(0, -40).setHidden(false);
     sprite.appendChild(light);
 
     sprite.select = function () {
@@ -116,7 +117,7 @@ test.moveToPosition = function (monster, pos) {
     // on stop show front facing
     goog.events.listen(move, lime.animation.Event.STOP, function () {
         anim.stop();
-        monster.setFill(test.ss.getFrame('walking-s000 (1).png'));
+        monster.setFill(test.ss.getFrame('walking-s00 (1).png'));
     })
 
 }
