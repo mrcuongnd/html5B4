@@ -62,7 +62,7 @@ test.start = function () {
 
 test.makeMonster = function() {
     var sprite = new lime.Sprite().setPosition(200, 200)
-        .setFill(test.ss.getFrame('walking-s00 (1).png'));
+        .setFill(test.ss.getFrame('walking-s0001.png'));
     //layer.appendChild(sprite);
 
     // show if monster is selected
@@ -110,14 +110,14 @@ test.moveToPosition = function (monster, pos) {
     var anim = new lime.animation.KeyframeAnimation();
     anim.delay = 1 / 7;
     for (var i = 1; i <= 7; i++) {
-        anim.addFrame(test.ss.getFrame('walking-' + dir + '00 (' + i + ').png'));
+        anim.addFrame(test.ss.getFrame('walking-' + dir + '000' + i + '.png'));
     }
     monster.runAction(anim);
 
     // on stop show front facing
     goog.events.listen(move, lime.animation.Event.STOP, function () {
         anim.stop();
-        monster.setFill(test.ss.getFrame('walking-s00 (1).png'));
+        monster.setFill(test.ss.getFrame('walking-s0001.png'));
     })
 
 }
